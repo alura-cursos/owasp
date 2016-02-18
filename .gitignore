@@ -1,0 +1,13 @@
+**/.classpath
+**/.settings/
+**/.project
+**/target/
+**/bin/
+**/.mvn
+.settings/
+.classpath
+.project
+**/derby.log
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
