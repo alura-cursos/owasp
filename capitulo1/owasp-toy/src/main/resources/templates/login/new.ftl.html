@@ -1,0 +1,33 @@
+<@layout>
+	
+		<div class='col-md-12'>
+			<h1> Bem vindo, por favor realize o login para começar a responder e perguntar</h1>
+		</div>
+		<div class='col-md-4 col-md-offset-3'>
+		<#if errorMessage??>		
+			<div id="erroDiv" class='alert alert-danger' >
+				${errorMessage}
+			</div>
+		</#if>
+		<#if successMessage??>		
+			<div class='alert alert-info'>
+				${successMessage}
+			</div>
+		</#if>
+		</div>
+		<div class='col-md-4 col-md-offset-3'>
+		
+			<form id="newLogin" action="/login" method="POST" class='form-horizontal'>
+				<fieldset class='form-group'> 
+					<label> Usuario</label>
+					<input type="text" name="usuario" id="usuario"/>
+				</fieldset>
+				<fieldset class='form-group'>
+				<label> Senha</label>
+				<input type="text" name="senha" id="senha"/>
+				</fieldset>
+				<input id="loginBtn" type='submit' value="Login" class="btn btn-default"/>
+				<a class="btn btn-primary" href="/usuarios/new"> Criar usuários </a>
+			</form>
+		</div>
+</@layout>

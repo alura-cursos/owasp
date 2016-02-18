@@ -1,0 +1,16 @@
+<@layout>
+
+<h2> Ultimas perguntas </h2>
+<a href="./new">Criar uma pergunta</a>
+<a href="#">Visualizar seu perfil</a>
+<ul class='list-group'>
+<#list perguntas as p>
+
+<li class='list-group-item'>
+	${p.pergunta} <a href="./${p.id}" class='btn btn-xs btn-default'>...</a>
+</li>
+
+</#list>
+</ul>
+
+</@layout>

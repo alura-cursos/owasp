@@ -1,0 +1,20 @@
+<@layout>
+	<h2>Visualizando pergunta</h2>
+	<div class='panel panel-default'>
+		<div class='panel-heading'>
+			${pergunta.pergunta}
+			
+		</div>
+		<div class='panel-body'>
+			<#if pergunta.respostas?has_content >
+			<h3>respostas dadas</h3>
+			<ul class='list-group'>
+				<#list pergunta.respostas as r >
+					<li class='list-group-item'>${r.resposta}</li>
+				
+				</#list>
+			</ul>
+			</#if>
+		</div>
+	</div>
+</@layout>

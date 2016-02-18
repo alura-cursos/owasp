@@ -1,0 +1,47 @@
+<@layout>
+	<form action="/usuarios" method="POST">
+			<div class='form-group'> 
+				<label> Usuário</label>
+				<input class='form-control' 
+					type="text" 
+					name="usuario" 
+					id="usuario" 
+					placeholder="digite seu usuário"/>
+				
+				
+			</div>
+			
+			<div class='form-group'> 
+				<label>Email</label>
+				<input class='form-control' 
+					type="text" 
+					name="email" 
+					id="email" 
+					placeholder="digite a senha"/>			
+				
+			</div>
+			
+			<div class='form-group'> 
+				<label>Senha</label>
+				<input class='form-control' 
+					type="text" 
+					name="senha" 
+					id="senha" 
+					placeholder="digite a senha"/>			
+				
+			</div>
+			
+			<div class='form-group'> 
+				<label>Confirme a senha</label>
+				<input class='form-control' 
+					type="text" 
+					name="confirmacaoSenha" 
+					id="confirmacaoSenha" 
+					placeholder="digite novamente"/>
+				
+				
+			</div>
+				
+			<input id="loginBtn" type='submit' value="Salvar" class='btn btn-primary'/>
+	</form>
+</@layout>
